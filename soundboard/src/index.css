@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* Cores principais */
+:root {
+  --dark-gray: #121212; /* Preto fosco */
+  --neon-purple-dark: #4b0082; /* Roxo escuro */
+  --neon-purple-glow: #6a0dad; /* Brilho roxo */
+  --black-glow: #000000; /* Luz preta */
+}
+
+/* Fundo */
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+
+/* Título com efeito neon */
+.neon-title {
+  color: var(--neon-purple-dark);
+  text-shadow: 
+    0 0 5px var(--black-glow),
+    0 0 10px var(--neon-purple-glow),
+    0 0 20px var(--neon-purple-glow),
+    0 0 40px var(--neon-purple-glow);
+}
+
+/* Caixa de teclado */
+.keyboard-container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 
+    0 0 20px var(--black-glow),
+    inset 0 0 15px #000000;
+}
+
+/* Botões de teclado */
+.keyboard-key {
+  background: var(--neon-purple-dark);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 40px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 15px var(--black-glow),
+    0 0 30px var(--neon-purple-glow);
+  transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Efeitos ao passar o mouse */
+.keyboard-key:hover {
+  transform: translateY(-5px);
+  background: var(--neon-purple-glow);
+  box-shadow: 
+    0 0 25px var(--neon-purple-glow),
+    0 0 50px var(--neon-purple-glow),
+    0 0 75px var(--neon-purple-glow);
+}
+
+/* Sem borda branca ao redor */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Fundo do rodapé */
+.bg-footer-dark {
+  background-color: #1a1a1a; /* Preto fosco mais claro */
+  box-shadow: 0 -4px 20px var(--black-glow);
+}
+
+/* Texto neon no rodapé */
+.text-footer-neon {
+  color: var(--neon-purple-dark);
+  text-shadow: 
+    0 0 5px var(--black-glow),
+    0 0 15px var(--neon-purple-glow);
+}
+
+/* Fundo principal */
+.bg-dark-gray {
+  background-color: #0d0d0d; /* Preto fosco */
+}
+
+/* Título neon */
+.neon-title {
+  color: var(--neon-purple-dark);
+  text-shadow: 0 0 10px var(--neon-purple-glow), 0 0 20px var(--neon-purple-glow);
+}
+
+/* Teclado */
+.keyboard-container {
+  background-color: #161616; /* Preto fosco mais claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--black-glow);
+}
+
+/* Botões do teclado */
+.keyboard-key {
+  background-color: #3d007a; /* Roxo escuro */
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid white;
+}
+
+.keyboard-key:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--neon-purple-glow);
+}
+
+/* Texto no rodapé */
+.text-footer-neon {
+  color: white;
+}
